@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LiquidControl - 下一代信息机房课堂管理与控制系统</title>
+  <style>
+    /* 全局样式 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+      color: #333;
+    }
+
+    header {
+      background: #1565c0;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1565c0;
+      font-weight: bold;
+      margin: 0 15px;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #0d47a1;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      color: #1565c0;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      background: #1565c0;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background: #0d47a1;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .feature {
+      flex: 1 1 30%;
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature h3 {
+      font-size: 1.5rem;
+      color: #1565c0;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      background: #1565c0;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    footer a:hover {
+      color: #bbdefb;
+    }
+
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+      }
+
+      .feature {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LiquidControl</h1>
+    <p>下一代信息机房课堂管理与控制系统</p>
+  </header>
+
+  <nav>
+    <a href="#features">功能</a>
+    <a href="#about">关于</a>
+    <a href="#contact">联系我们</a>
+  </nav>
+
+  <section class="hero">
+    <h2>高效、智能、灵活的课堂管理</h2>
+    <p>LiquidControl 为课堂管理带来全新体验。无论是设备控制还是实时监控，我们都为您提供最佳解决方案。</p>
+    <button onclick="window.location.href='https://github.com'">访问 GitHub 项目</button>
+  </section>
+
+  <section class="container" id="features">
+    <h2 style="text-align: center; margin-bottom: 30px;">主要功能</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>实时监控</h3>
+        <p>通过直观的界面实时查看所有设备的状态，确保课堂顺利进行。</p>
+      </div>
+      <div class="feature">
+        <h3>设备控制</h3>
+        <p>一键管理所有设备，支持远程开关机、软件分发与系统重启。</p>
+      </div>
+      <div class="feature">
+        <h3>数据分析</h3>
+        <p>生成详尽的课堂数据报告，帮助优化教学计划，提升课堂效率。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="about">
+    <h2 style="text-align: center; margin-top: 50px; margin-bottom: 20px;">关于 LiquidControl</h2>
+    <p style="text-align: center; font-size: 1rem; color: #555; max-width: 800px; margin: 0 auto;">
+      LiquidControl 是为现代课堂设计的一款全面管理系统，旨在解决传统课堂管理的痛点。它通过智能化技术，提供实时监控、远程控制和高效数据分析，帮助教师和管理员轻松掌控课堂。
+    </p>
+  </section>
+
+  <footer>
+    <p>Copyright &copy; 2024 LiquidControl. 保留所有权利。</p>
+    <p><a href="https://github.com/LiquidControl/LiquidControl">访问我们的 GitHub</a></p>
+  </footer>
+</body>
+</html>
